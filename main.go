@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/Lebonesco/scanner/lexer"
-	"github.com/Lebonesco/scanner/token"
-	"io/ioutil"
 	"fmt"
-	"path/filepath"
+	"github.com/Lebonesco/practice_scanner/lexer"
+	"github.com/Lebonesco/practice_scanner/token"
+	"io/ioutil"
 	"os"
+	"path/filepath"
 )
 
 func main() {

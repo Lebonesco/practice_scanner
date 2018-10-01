@@ -5,7 +5,7 @@ package lexer
 import (
 	"fmt"
 
-	"github.com/Lebonesco/scanner/token"
+	"github.com/Lebonesco/practice_scanner/token"
 )
 
 type ActionTable [NumStates]ActionRow

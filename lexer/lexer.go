@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"unicode/utf8"
 
-	"github.com/Lebonesco/scanner/token"
+	"github.com/Lebonesco/practice_scanner/token"
 )
 
 const (

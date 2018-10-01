@@ -1,15 +1,15 @@
-package scanner 
+package main
 
 import (
-	"github.com/Lebonesco/scanner/lexer"
-	"github.com/Lebonesco/scanner/token"
+	"github.com/Lebonesco/practice_scanner/lexer"
+	"github.com/Lebonesco/practice_scanner/token"
 	"testing"
 )
 
 // test that the lexer works
 func TestParseQuotes(t *testing.T) {
 	input := `Sed ut perspiciatis, "unde omnis" iste 'natus' en 
-		"hello" "es`;
+		"hello" "es`
 
 	tests := []struct {
 		expectedType    token.Type
@@ -32,12 +32,12 @@ func TestParseQuotes(t *testing.T) {
 		tok := l.Scan()
 
 		if tok.Type != tt.expectedType {
-			t.Fatalf("tests[%d] - tokentype wrong. expected=%d, got=%d", 
+			t.Fatalf("tests[%d] - tokentype wrong. expected=%d, got=%d",
 				i, tt.expectedType, tok.Type)
 		}
 
 		if string(tok.Lit) != tt.expectedLiteral {
-			t.Fatalf("tests[%d] - literal wrong. expected=%q, got=%q", 
+			t.Fatalf("tests[%d] - literal wrong. expected=%q, got=%q",
 				i, tt.expectedLiteral, string(tok.Lit))
 		}
 	}
@@ -46,7 +46,7 @@ func TestParseQuotes(t *testing.T) {
 // test that quotation replacement works
 func TestReplaceQuotes(t *testing.T) {
 	tests := []struct {
-		input string
+		input  string
 		result string
 	}{
 		{
