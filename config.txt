@@ -1,6 +1,6 @@
 [DEFAULT]
 name = Jospeh Livni
 host = ix-dev.cs.uoregon.edu
-path = /home/Jospeh
-program = scanner
+path = /home/users/jlivni/public/practice_scanner
+program = main
 repo = https://github.com/Lebonesco/practice_scanner

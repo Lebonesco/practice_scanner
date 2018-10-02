@@ -4,10 +4,8 @@ FROM golang
 ADD . /go/src/github.com/Lebonesco/
 WORKDIR /src/github.com/Lebonesco
 
-RUN git clone https://github.com/Lebonesco/practice_scanner.git
+RUN go get github.com/Lebonesco/practice_scanner
 WORKDIR /src/github.com/Lebonesco/practice_scanner
 
 RUN ls
-RUN ["chmod", "+x", "main.exe"]
-CMD ["./main.exe"]
-
+CMD ["$PWD"]
